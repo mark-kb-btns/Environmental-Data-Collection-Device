@@ -146,6 +146,8 @@ void loop() {
     digitalWrite(ledDS, LOW);
   }
 
+  ///////////////////////// SD CARD WRITING /////////////////////////
+  
       //Enable for serial monitoring
       /*Serial.print("\nHumidity: ");
       Serial.println(hnt_humidity);
@@ -178,14 +180,16 @@ void loop() {
       myFile.print(hnt_dewpoint);
       myFile.print(",");
       myFile.print(hnt_dewpointfast);
-      myFile.print(",");
+      myFile.print(",");*/
       myFile.print(lightIntensity);
       myFile.print(",");
       myFile.print(dust_results);
-      myFile.println();*/
+      myFile.println();
 
   myFile.flush(); // Ensure data is written to the SD card
   delay(1000);
+
+    ///////////////////////// SD CARD WRITING /////////////////////////
 }
 
 //////////////////////////////// MAIN (R/W) ////////////////////////////////
