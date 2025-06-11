@@ -1,5 +1,11 @@
+/*
+  Configuration taken from: Refrains : https://create.arduino.cc/projecthub/mircemk/diy-air-quality-monitor-with-sharp-gp2y1010au0f-sensor-7b0262
+  Sensor: Sharp Optical Dust Sensor (GP2Y1010AU0F)
+
+*/
+
 #include "dust_sintegration.h"
-#include <Arduino.h> // or #include <WProgram.h>
+#include <Arduino.h> 
 
 
 SHARP::SHARP(int measurePin, int ledPin) {
@@ -35,5 +41,5 @@ float SHARP::readDust() {
   // Chris Nafis (c) 2012
   dustDensity = 170 * calcVoltage - 0.1;
 
-  return dustDensity; // Return the calculated light intensity
+  return dustDensity; // Return the calculated dust intensity
 }
