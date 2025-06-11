@@ -1,6 +1,11 @@
+/*
+  Configuration taken from: http://www.seeedstudio.com
+  Sensor: Grove - Light Sensor
+*/
+
 #include "light_sintegration.h"
 #include <math.h>
-#include <Arduino.h> // or #include <WProgram.h>
+#include <Arduino.h>
 
 
 LightSensor::LightSensor(int pin) {
