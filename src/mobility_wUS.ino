@@ -1,3 +1,11 @@
+/*
+  The mobility function did not make it to the final version of the device due to constraints. 
+  Configuration is taken from an open-source project.
+  You can use this in your project if you want to integrate obstacle detection and mobility as four-wheeled device (rover) using dc motors.
+  It is tested but is not optimized for the rest of the sensors used in the project. Configure as needed (e.g. halting when the dust sensor exceeds threshold number).
+  Sensor: HC-SR04
+*/
+
 #include <AFMotor.h>  
 #include <NewPing.h>
 #include <Servo.h> 
